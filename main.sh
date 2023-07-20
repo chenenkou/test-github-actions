@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置目标时区为东八区（中国标准时间）
-export TZ="Asia/Shanghai"
+# export TZ="Asia/Shanghai"
 
 if [ -f .env ]; then
   source .env
