@@ -33,4 +33,4 @@ jobs:
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
         run: |
-          ./script.sh
+          ./main.sh
