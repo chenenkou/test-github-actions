@@ -31,7 +31,7 @@ windSpeed=$(get_json_value "$weather_data" windSpeed)
 humidity=$(get_json_value "$weather_data" humidity)
 
 # 打印提取的天气信息
-text="实时天气：$text, 当前温度：${temp}°C, 体感温度：${feelsLike}°C, 湿度：${humidity}%, 风向：$windDir, 风速：${windSpeed}km/h"
+text="实时天气：$text, 温度：${temp}°C, 体感：${feelsLike}°C, 湿度：${humidity}%, 风向：$windDir, 风速：${windSpeed}km/h"
 # 将字符串进行URL编码
 text=$(printf "%s" "$text" | xxd -plain | tr -d '\n' | sed 's/\(..\)/%\1/g')
 
