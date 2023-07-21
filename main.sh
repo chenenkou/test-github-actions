@@ -9,7 +9,7 @@ fi
 
 key="${PUSH_KEY}"
 
-current_time=$(date +"%Y年%m月%d日 %H:%M:%S")
+current_time=$(date +"%Y-%m-%d %H:%M:%S")
 
 text="现在时间 $current_time"
 text="${text// /%20}"
